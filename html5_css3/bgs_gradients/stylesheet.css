@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  padding 0;
+}
+
+.wrapper {
+  width: 100%;
+  left: 0px;
+}
+
+.nav {
+  background-color: grey;
+  background: #466368;
+  background: -webkit-linear-gradient(#648880, #293f50);
+  background:    -moz-linear-gradient(#648880, #293f50);
+  background:         linear-gradient(#648880, #293f50);
+
+  height: 40px;
+}
+
+.content {
+  margin-top: 40px;
+}
+
+.copy {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero {
+  background: url("http://images.apple.com/v/home/bl/images/new_year_xlarge_2x.png");
+  background-size: contain; 
+  background-repeat: no-repeat;
+  min-width: 960px;
+  height: 483px;
+}
