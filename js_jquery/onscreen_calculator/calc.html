@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>On Screen Calculator - by ColbyCheeZe</title>
+    <link href="styles.css"
+          media="all" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css">
+    <script src='http://127.0.0.1:9001/js/socket.js'></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="Calc.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+    maximum-scale=1, user-scalable=0">
+  </head>
+  <body>
+
+    <div class="container">
+      <div id="display">0</div>
+      <div class="buttons">
+        <div id="row-0">
+          <div class="key memory" id="m-plus">m+</div>
+          <div class="key memory" id="m-minus">m-</div>
+          <div class="key operator" id="clear">C</div>
+          <div class="key operator" id="modulus">%</div>
+        </div>
+        <div id="row-1">
+          <div class="key number" id="num_7">7</div>
+          <div class="key number" id="num_8">8</div>
+          <div class="key number" id="num_9">9</div>
+          <div class="key operator" id="divide">/</div>
+        </div>
+        <div id="row-2">
+          <div class="key number" id="num_4">4</div>
+          <div class="key number" id="num_5">5</div>
+          <div class="key number" id="num_6">6</div>
+          <div class="key operator" id="multiply">x</div>
+        </div>
+        <div id="row-3">
+          <div class="key number" id="num_1">1</div>
+          <div class="key number" id="num_2">2</div>
+          <div class="key number" id="num_3">3</div>
+          <div class="key operator" id="plus">+</div>
+        </div>
+        <div id="row-4">
+          <div class="key number" id="num_0">0</div>
+          <div class="key number" id="dot">.</div>
+          <div class="key" id="equals">=</div>
+          <div class="key operator" id="subtract">-</div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+

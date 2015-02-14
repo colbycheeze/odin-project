@@ -1,0 +1,93 @@
+$calc-color: black;
+$num-color1: #009933;
+$num-color2: #005C1F;
+
+$operator-color1: #669999;
+$operator-color2: #253737;
+
+$memory-color1: #0000FF;
+$memory-color2: #000099;
+
+$equals-color1: #FF9900;
+$equals-color2: #995C00;
+
+
+*, :before, :after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: $calc-color;
+  overflow: hidden;
+  height: 100%;
+  width: 200px;
+  margin: 50px auto;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+#display {
+  background-color: white;
+  border-radius: 8px;
+  width: 100%;
+  height: 35px;
+  margin: 10px 0px;
+  font-size: 27px;
+  font-family: Courier, Arial, sans-serif;
+  line-height: 36px;
+  padding-right: 10px;
+  padding-top: 2px;
+  text-align: right;
+
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+}
+.row {
+  clear: both;
+  margin: 0 auto;
+}
+.key {
+  font: bold 18px Helvetica, Arial, sans-serif;
+  color: white;
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 3px;
+  padding: 10px 5px;
+  vertical-align: center;
+  cursor: pointer;
+}
+
+.number {
+  background: -webkit-linear-gradient($num-color1, $num-color2);
+  background: -moz-linear-gradient($num-color1, $num-color2);
+  background: linear-gradient($num-color1, $num-color2);
+}
+
+.memory {
+  background: -webkit-linear-gradient($memory-color1, $memory-color2);
+  background: -moz-linear-gradient($memory-color1, $memory-color2);
+  background: linear-gradient($memory-color1, $memory-color2);
+}
+
+#equals {
+  background: -webkit-linear-gradient($equals-color1, $equals-color2);
+  background: -moz-linear-gradient($equals-color1, $equals-color2);
+  background: linear-gradient($equals-color1, $equals-color2);
+}
+
+.operator {
+  background: -webkit-linear-gradient($operator-color1, $operator-color2);
+  background: -moz-linear-gradient($operator-color1, $operator-color2);
+  background: linear-gradient($operator-color1, $operator-color2);
+}
