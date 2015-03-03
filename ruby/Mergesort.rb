@@ -7,8 +7,7 @@ class Sort
       left_half = merge_sort(numbers[0...half])
       right_half = merge_sort(numbers.slice(half...length))
 
-      result = merge(left_half, right_half)
-      return result
+      return merge(left_half, right_half)
     end
 
     numbers
@@ -32,10 +31,11 @@ class Sort
     end
 
     if ia == a_length
-      array_b[ib...b_length].each { |x| sorted << x }
+      return sorted.concat array_b[ib..-1]
     else
-      array_a[ia...a_length].each { |x| sorted << x }
+      return sorted.concat array_a[ia..-1]
     end
-    sorted
   end
 end
+
+puts Sort.merge_sort([4,3,20,1,16,-5,7]).to_s # => [-5, 1, 3, 4, 7, 16, 20]
