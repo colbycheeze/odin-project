@@ -15,3 +15,4 @@ class Fibonacci
     last << ( last[-1] + last[-2] )
   end
 end
+
